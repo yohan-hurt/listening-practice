@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listening Practice - Indicaciones</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card-container instructions-container">
+  <button class="back-link" onclick="window.location.href='index.html'">← Volver al inicio</button>
+  <div class="instructions-box">
+    <h2 class="instructions-title">INDICACIONES</h2>
+    <ul class="instructions-list">
+      <li>
+        <span class="bullet-icon">1</span>
+        <span><span class="highlight">Escucha sin límites:</span> El video se reproducirá automáticamente en bucle. No te preocupes si no captas todo a la primera; la clave es escucharlo una y otra vez hasta que tu cerebro logre identificar cada sonido.</span>
+      </li>
+      <li>
+        <span class="bullet-icon">2</span>
+        <span><span class="highlight">Escribe lo que oyes:</span> Digita la frase completa en la barra de texto. No te preocupes por las mayúsculas, comas, puntos o apóstrofes, el sistema los ignorará para facilitarte la validación.</span>
+      </li>
+      <li>
+        <span class="bullet-icon">3</span>
+        <span><span class="highlight">Encuentra la totalidad:</span> Debes dar exactamente con las palabras correctas. Si fallas, el campo vibrará para que sigas puliendo el texto hasta lograrlo.</span>
+      </li>
+      <li>
+        <span class="bullet-icon">4</span>
+        <span><span class="highlight">Aprende del error:</span> Cuando aciertes, se te revelará la transcripción exacta con su puntuación real para que compares cómo se escribe formalmente, y podrás avanzar a tu propio ritmo.</span>
+      </li>
+      <li>
+        <span class="bullet-icon">5</span>
+        <span><span class="highlight">¿Atrapado? Pide una pista:</span> Si te bloqueas, usa el botón de pista. El sistema revelará algunas letras y marcará los espacios faltantes con un punto (<span style="color: #f59e0b; font-weight: bold;">•</span>) para ayudarte a deducir la palabra.</span>
+      </li>
+      <li>
+        <span class="bullet-icon">6</span>
+        <span><span class="highlight">¿Muy difícil? Omite:</span> Si una frase se complica demasiado, puedes usar el botón de "Omitir" para pasar a la siguiente lección y no estancarte en tu aprendizaje.</span>
+      </li>
+    </ul>
+  </div>
+
+  <button class="start-btn" onclick="iniciarPractica()">COMENZAR</button>
+</div>
+
+<script>
+  function iniciarPractica() {
+    // Aquí atrapamos el nivel de la URL (por ejemplo, ?nivel=C)
+    const parametros = new URLSearchParams(window.location.search);
+    // Si por alguna razón no hay nivel, por defecto ponemos el A
+    const nivel = parametros.get('nivel') || 'A'; 
+    
+    // Y mandamos al usuario al reproductor con ese mismo nivel
+    window.location.href = `reproductor.html?nivel=${nivel}`;
+  }
+</script>
+
+</body>
+</html>

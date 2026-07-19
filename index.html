@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listening Practice - Seleccionar Nivel</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card-container index-container">
+  <div class="title-box">
+    <h1>elige el nivel del listening que has de escuchar</h1>
+  </div>
+
+  <div class="levels-grid">
+    <!-- Nivel A -->
+    <div class="level-card a-lvl" onclick="window.location.href='indicaciones.html?nivel=A'">
+      <div class="level-badge" style="color: var(--red);">A</div>
+      <div class="level-info">
+        <div class="level-title">Principiante / Esencial</div>
+        <p class="level-description">Para estudiantes que están construyendo su base. Los videos tienen un ritmo claro, vocabulario cotidiano y estructuras sencillas para acostumbrar el oído sin frustrarse.</p>
+      </div>
+    </div>
+
+    <!-- Nivel B -->
+    <div class="level-card b-lvl" onclick="window.location.href='indicaciones.html?nivel=B'">
+      <div class="level-badge" style="color: var(--green);">B</div>
+      <div class="level-info">
+        <div class="level-title">Intermedio / Independiente</div>
+        <p class="level-description">Para quienes ya entienden la idea general pero quieren defenderse con nativos. Ideal para captar modismos comunes, velocidad de conversación normal y acentos variados.</p>
+      </div>
+    </div>
+
+    <!-- Nivel C -->
+    <div class="level-card c-lvl" onclick="window.location.href='indicaciones.html?nivel=C'">
+      <div class="level-badge" style="color: #3498db;">C</div>
+      <div class="level-info">
+        <div class="level-title">Avanzado / Experto</div>
+        <p class="level-description">Para estudiantes que buscan el dominio total. Diseñado para entender *slang* pesado, chistes rápidos, referencias culturales complejas, voces distorsionadas y clips de series sin filtros.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
