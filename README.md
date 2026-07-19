@@ -1,6 +1,6 @@
 # Listening Practice App
 
-Una aplicación web interactiva diseñada para mejorar la comprensión auditiva (listening) en inglés mediante el uso de clips de video. El usuario debe escuchar frases, transcribirlas y validar sus conocimientos en distintos niveles de dificultad.
+Una aplicación web interactiva diseñada para mejorar la comprensión auditiva (listening) en inglés mediante el uso de clips de video. El usuario debe escuchar frases, transcribirlas y validar sus conocimientos en distintos niveles de dificultad. Esto solamente es un demo del webpage real
 
 ## 🚀 ¿Cómo funciona?
 
